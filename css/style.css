@@ -80,7 +80,7 @@ input{
   margin-left:60px;
 }
 .todo-all-icon{
-  background: url(expand.svg);
+  background: url(../img/expand.svg);
 }
 .toggle{
   position: absolute;
@@ -104,7 +104,7 @@ input{
   right: 10px;
   top: 15px;
   border: none;
-  background: url(del.png);
+  background: url(../img/del.png);
   background-size: 20px 20px;
   outline: none;
 }
@@ -166,7 +166,7 @@ input{
   border: 2px solid #d9d9d9;
 }
 .view input[type="checkbox"]:checked+span{
-  background:url(checkmark.svg);
+  background:url(../img/checkmark.svg);
   border: 2px solid #43a047;
 }
 .line{

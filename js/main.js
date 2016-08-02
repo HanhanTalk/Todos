@@ -3,11 +3,12 @@ var text='';
 var arr = [];
 $(function(){
   $("#newtodo").on('keypress',function(event){
-    if(event.keyCode=="13"){
-      i=i+1;
+    if (event.keyCode != "13") {
+    } else {
+      i = i + 1;
       text = $(event.target).val();
       todosAdd(i);
-      todosArray(i,text);
+      todosArray(i, text);
       updateTodosCouts();
       isHasCpt();
       toggleAll();
