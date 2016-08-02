@@ -1,0 +1,20 @@
+{
+  "name": "todos",
+  "homepage": "https://github.com/HanhanTalk/Todos",
+  "authors": [
+    "Hanhan <HanhanTalk@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
