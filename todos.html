@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudos</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head-title">Todos</h1>
+        <div class="warp">
+            <div class="head">
+                <input type="text" placeholder="What needs to be done?" class="newtodos" id="newtodo" />
+                <input type="checkbox" class="toggle-all hidden-input"/><span class="todo-all-icon"></span>
+            </div>
+            <div class="main">
+                <ul class="todo-list" id="list">
+                </ul>
+                <li class="todo hidden todo-li-template">
+                    <div class="view">
+                        <input class="toggle hidden-input" type="checkbox"><span class="todo-icon"></span>
+                        <label class="todo-name"></label>
+                        <button class="destroy"></button>
+                    </div>
+                    <input class="newtodos todo-edit hidden" onkeypress="alterTodo(event);" type="text"/>
+                </li>
+            </div>
+            <div class="foot">
+                <p><span id="foot-num">0</span>item left</p>
+                <ul class="footbtn">
+                    <li><a id="all" href="javascript:;">All</a></li>
+                    <li><a id="act" href="javascript:;">Active</a></li>
+                    <li><a id="cpt" href="javascript:;">Completed</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

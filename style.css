@@ -1,0 +1,179 @@
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style:none;
+}
+h1{
+  text-align: center;
+}
+input{
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  outline:none;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+}
+.head-title{
+  color:#ff5722;
+  font-size:38px;
+}
+.title{
+  text-align: center;
+  font-size: 52px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.head{
+  position: relative;
+  box-shadow: 1px 1px 5px #ccc;
+}
+.warp{
+  margin: 50px auto;
+  width: 500px;
+}
+.main{
+  position: relative;
+  width:500px;
+}
+.todo{
+  position: relative;
+  height:50px;
+  line-height: 50px;
+  border-bottom: 1px solid #c9c9c9;
+}
+.newtodos{
+  border: none;
+  width: 400px;
+  height: 50px;
+  margin-left: 50px;
+  font-size: 22px;
+  padding-left: 10px;
+}
+.main .todo-list{
+  list-style: none;
+  box-shadow: 1px 1px 5px #ccc;
+}
+.view{
+  position: relative;
+}
+
+.todo-edit{
+  width: 439px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 1px 1px 5px #9E9E9E inset;
+}
+.todo-name{
+  margin-left:60px;
+}
+.todo-all-icon{
+  background: url(expand.svg);
+}
+.toggle{
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+}
+.toggle-all{
+  top: 7px;
+  left: 7px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: none;
+}
+.destroy{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  border: none;
+  background: url(del.png);
+  background-size: 20px 20px;
+  outline: none;
+}
+.btn-click{
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+.foot{
+  margin-top: 30px;
+}
+.foot p{
+  float:left;
+}
+.footbtn{
+  width: 300px;
+  height: 30px;
+  margin-left: 228px;
+}
+.footbtn li{
+  float:left;
+  margin: 0 20px;
+  padding: 2px;
+}
+.footbtn a{
+  text-decoration: none;
+  color:#646464;
+}
+#foot-num{
+  margin-right: 5px;
+  color:#ff5722;
+}
+.hidden {
+  display: none;
+}
+.hidden-input{
+  opacity:0;
+  position: absolute;
+}
+.head input[type="checkbox"]+span{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  pointer-events: none;
+}
+.head input[type="checkbox"]:checked+span{
+    transform: rotate(270deg);
+    transition:all 0.2s;
+}
+.view input[type="checkbox"]+span{
+  height: 25px;
+  width:25px;
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  pointer-events: none;
+  border-radius: 20px;
+  border: 2px solid #d9d9d9;
+}
+.view input[type="checkbox"]:checked+span{
+  background:url(checkmark.svg);
+  border: 2px solid #43a047;
+}
+.line{
+  text-decoration: line-through;
+  color:#d9d9d9;
+}
+.box{
+  border:1px solid #ecbcac;
+  border-radius:2px;
+}
