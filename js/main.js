@@ -28,8 +28,6 @@ function todosAdd(id){
   tpl_html.find('.todo-name').text(newtodoVul);
   tpl_html.removeClass('hidden');
   tpl_html.removeClass('todo-li-template');
-
-  // tpl_html.data('id', id);
   tpl_html.attr('data-id', String(id));
 
   $('#list').prepend(tpl_html);
